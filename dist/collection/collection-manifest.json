@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-rye-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcRyeHarvestLoss",
+      "componentPath": "components/agc-rye-harvest-loss/agc-rye-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcRyeHarvestLossInputs",
+      "componentPath": "components/agc-rye-harvest-loss-inputs/agc-rye-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcRyeHarvestLossProgress",
+      "componentPath": "components/agc-rye-harvest-loss-progress/agc-rye-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcRyeHarvestLossResults",
+      "componentPath": "components/agc-rye-harvest-loss-results/agc-rye-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-rye-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcRyeHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-rye-harvest-loss-results-placeholder/agc-rye-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
